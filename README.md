@@ -33,7 +33,7 @@
 
 http://localhost:6998/oauth2/token?grant_type=client_credentials&client_id=123
 
-2. if you want connect to your own database , it's todo at line 52 , utils/TokenManager.go
+2. if you want to connect to your own database , it's todo at line 52 , utils/TokenManager.go
 
 #### 参与贡献
 1. something important you can email me : zhuaiman@hotmail.com
