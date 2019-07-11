@@ -1,10 +1,19 @@
 # golang-wxwork-sdk
 
 #### 介绍
-企业微信API对接，企业自行开发，GO语言服务端
+企业微信，企业方服务API提供，企业自行开发扩展，GO语言服务端+docker自动化构建
 
 #### 软件架构
-GOLANG Swagger OAuth2.0 Restful
+1、GOLANG
+
+2、Swagger generater
+
+3、OAuth2.0
+
+4、Docker File
+
+5、Jenkins with docker-compose.yml
+
 
 #### 安装教程
 
