@@ -16,19 +16,23 @@
 
 
 #### 安装教程
+1、step up fisrt.
+- input your corp. and database info (at conf/app.conf);
+- your redis db for token (at main.go line 74);
+- cmd "swag init ",generate your restful style site (at your workdir);
+- cmd "go run main.go TEST"
+- input "http://localhost:6998" at your chrome brower.
 
-将企业的corpid,secret配置到conf/app.conf
-该API采用了OAuth2.0安全协议，访问前可以通过以下方式获取令牌
-client_id:lulouis
-client_secret:123456
-该认证信息可连接您自身的员工数据库进行认证
+2、your can get token with any client_id
+http://localhost:6998/oauth2/token?grant_type=client_credentials&client_id=123
+
+if you want connect to your own database , it's todo at line 52 , utils/TokenManager.go
 
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. your can get token use any client_id
+http://localhost:6998/oauth2/token?grant_type=client_credentials&client_id=123
 
 #### 参与贡献
 
@@ -36,4 +40,5 @@ client_secret:123456
 2. 新建 Feat_xxx 分支
 3. 提交代码
 4. 新建 Pull Request
+5. something important u can email me : zhuaiman@hotmail.com
 
