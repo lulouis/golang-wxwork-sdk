@@ -35,10 +35,5 @@ if you want connect to your own database , it's todo at line 52 , utils/TokenMan
 http://localhost:6998/oauth2/token?grant_type=client_credentials&client_id=123
 
 #### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-5. something important u can email me : zhuaiman@hotmail.com
+1. something important you can email me : zhuaiman@hotmail.com
 
