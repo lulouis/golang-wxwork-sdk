@@ -12,11 +12,6 @@ func CreateBasicRouter(eng *gin.Engine) (err error) {
 	v1 := eng.Group("/v1")
 	{
 
-		Account := v1.Group("/Account")
-		{
-			Account.GET("Login", c.Login)
-			Account.GET("GetAccessToken", c.GetAccessToken)
-		}
 		Department := v1.Group("/Department")
 		{
 			Department.Use(ginserver.HandleTokenVerify())
