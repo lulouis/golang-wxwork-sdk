@@ -1,0 +1,18 @@
+你的镜像名:
+  # 镜像:版本
+  image: 192.168.12.35:5000/你的镜像名:latest
+  # 映射容器80端口到本地3003端口
+  ports:
+    - "8998:8998"
+  restart: always
+  # 数据卷 映射本地文件到容器
+  environment:
+    - APP_NAME=golang-wxwork-sdk
+    - RUN_MODE=PRD
+  volumes:
+  # 映射文件到容器并覆盖
+    - ./conf:/opt/conf
+    - ./docs:/opt/docs/
+    - ./Log:/opt/Log/
+    - ./golang-wxwork-sdk:/opt/golang-wxwork-sdk
+  # 覆盖容器启动后默认执行的命令。
